@@ -22,7 +22,8 @@ import sys
 import gensim
 import logging
 import smart_open
-
+import Resource
+import os
 program=sys.argv[0]
 logger = logging.getLogger(program)
 logging.basicConfig(format='%(asctime)s : %(threadName)s : %(levelname)s : %(message)s', level=logging.INFO)
@@ -69,8 +70,9 @@ def glove2word2vec(glove_vector_file, output_model_file):
     return model_file
 
 if __name__ == "__main__":
-
-    glove_vector_file=sys.argv[1]
-    output_model_file=sys.argv[2]
-
-    glove2word2vec(glove_vector_file, output_model_file)
+    pass
+    #glove_vector_file=sys.argv[1]
+    #output_model_file=sys.argv[2]
+    #glove_vector_file = os.path.join(Resource.HOME, Resource.ComputerName+"/Mozart/data/word2vec/glove.840B.300d.txt")
+    #output_model_file =
+    #glove2word2vec(glove_vector_file, output_model_file)
